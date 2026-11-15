@@ -2,7 +2,6 @@
 
 Plateforme web de commande de repas et de livraison pour un restaurant, construite sur une architecture microservices.
 
-Projet AWD, ESPRIT 2026-2027, classe 4DAS-I7, groupe A COMPLETER.
 
 ## Sujet
 
