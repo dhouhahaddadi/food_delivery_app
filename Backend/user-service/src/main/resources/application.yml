@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: user-service
+  # Par défaut : base H2 en mémoire, le service démarre sans rien installer.
+  # Pour PostgreSQL : --spring.profiles.active=postgres
+  datasource:
+    url: jdbc:h2:mem:user_db;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+server:
+  port: 8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
